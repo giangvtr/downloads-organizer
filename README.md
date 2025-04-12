@@ -9,25 +9,17 @@ This Python script helps you **automatically organize and clean your Downloads f
 
 ---
 
-## 📁 Folder Structure
+## Features
 
-When run, it creates an `Organized` folder inside your Downloads directory, with subfolders for each file category:
-Downloads/ ├── Organized/ │ ├── Archives/ │ ├── Code/ │ ├── Documents/ │ ├── Images/ │ ├── Installers/ │ ├── Music/ │ ├── Others/ │ ├── Scripts/ │ ├── Videos/ │ └── recap.json ├── your_unorganized_files...
-
-
----
-
-## 🚀 Features
-
-- ✅ File categorization based on extensions
-- 🧼 Automatic deletion of old files (default: 180 days)
-- 📦 JSON summary (`recap.json`) with moved & deleted files
-- 🧠 Customizable source and target directories
-- 🔧 Command-line interface or default fallback
+- File categorization based on extensions
+- Automatic deletion of old files (default: 180 days)
+- JSON summary (`recap.json`) with moved & deleted files
+- Customizable source and target directories
+- Command-line interface or default fallback
 
 ---
 
-## 📌 File Categories
+## File Categories
 
 The script supports these default file types:
 
@@ -53,7 +45,7 @@ Make sure you have Python 3 installed. No external dependencies are needed.
 python3 --version
 ```
 ---
-## 💡 Usage
+## Usage
 ### Run with default values (clean Downloads folder)
 ```bash
 python3 organize_downloads.py
@@ -73,7 +65,7 @@ Example:
 python3 organize_downloads.py ~/Downloads /tmp/OrganizedDownloads 90
 ```
 
-## 📄 Output
+## Output
 The script will print logs of moved and deleted files and save a recap.json in the target directory containing:
 ```bash
 {
