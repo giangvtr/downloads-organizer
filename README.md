@@ -83,5 +83,7 @@ The script will print logs of moved and deleted files and save a recap.json in t
 ```
 
 ## Further Development 
+* Avoid overwriting old files and folders on later execution of the script
+* Deduplicate same files (with or without different names) using `hashlib` to compare files' contents
 * Weekly scheduling with crontab
 * Extend the Extension table, maybe with the help of AI ?
